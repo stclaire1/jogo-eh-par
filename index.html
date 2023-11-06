@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JOGO É PAR?</title>
+</head>
+<body>
+    <header>
+        <div>
+            <p>Nível:</p>
+            <form>
+                <select id="game-difficulty">
+                    <option selected value="selection">Selecione</option>
+                    <option value="beginner">Fácil</option>
+                    <option value="normal">Médio</option>
+                    <option value="hard">Difícil</option>
+                </select>
+            </form>
+        </div>
+        <div>
+            <p>Tempo:</p>
+            <span id="difficulty-timer"></span>
+        </div>
+        <div>
+            <input type="button" value="Iniciar" id="btn-start">
+            <input type="button" value="Pausar" id="btn-pause">
+            <input type="button" value="Parar" id="btn-stop">
+        </div>
+    </header>
+    <main>
+        <h1 id="random-number"></h1>
+    </main>
+    <footer>
+        <div>
+            <p>Acertos: <span id="success"></span> (<span id="success-percentage"></span>)</p>
+        </div>
+        <div>
+            <p>Erros: <span id="mistakes"></span></p>
+        </div>
+        <div>
+            <p>Números pares sorteados: <span id="even-numbers"></span></p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
